@@ -1,6 +1,11 @@
 # musicGPT Automation
 
-This project contains automated tests for musicGPT using Selenium and Python.
+This project provides an automated testing suite for the musicGPT platform using Python, Selenium, and Pytest
+
+# Environment Requirements
+Python: 3.8 or higher
+Browser: Google Chrome (recommended)
+OS: Windows/Mac/Linux
 
 ## Setup
 
@@ -23,3 +28,15 @@ To run specific tests:
 pytest src/tests/test_signup.py
 pytest src/tests/test_create.py
 pytest src/tests/test_topup.py
+
+# Clone the repository:
+git clone https://github.com/aishwaryaneupane/musicGPTAutomation.git
+cd musicGPTAutomation
+
+# Test Structure Overview
+The project follows the Page Object Model (POM) pattern:
+
+src/pages/: Contains page classes with locators and actions (e.g., signup.py).
+src/tests/: Contains the actual test scripts.
+src/utils/: Reusable helper functions and driver configurations.
+conftest.py: Configuration for Pytest fixtures (setup/teardown of the browser).
