@@ -1,4 +1,3 @@
-
 from pages.signup import SignUpPage
 from utils import config
 def test_new_signup(driver):
